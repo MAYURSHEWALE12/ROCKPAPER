@@ -24,14 +24,14 @@ const showwinner =(userwin,userchoice,compchoice)=>{
         console.log("You win");
         msg.innerText =`You Win ! Your ${userchoice} beats Computers ${compchoice}`;
         msg.style.backgroundColor ="green";
-        usermsg.innerHTML=userscore;
         userscore = userscore+1;
+        usermsg.innerHTML=userscore;
     }else{
         console.log("Computer win");
         msg.innerText =`You lost. ${compchoice} beats ${userchoice}`;
         msg.style.backgroundColor ="red";
-        compmsg.innerHTML = compscore;
         compscore = compscore+1;
+        compmsg.innerHTML = compscore;
     }
 }
 
@@ -60,3 +60,4 @@ choices.forEach((choice) => {
         playgame(userchoice);
     })
 });
+
